@@ -1,7 +1,23 @@
-echo "# Coding-challenges" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/mnkhodad/Coding-challenges.git
-git push -u origin main
+#reverse string
+class Solution(object):
+    def reverseString(self, s):
+        """
+        :type s: List[str]
+        :rtype: None Do not return anything, modify s in-place instead.
+        """
+        s[:]=s[::-1]
+#two sum
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        for i in range (len(nums)-1):
+            z = abs(nums[i] - target)
+            l = nums.index(z)
+            if (l != i):   
+                return[i,l]
+            else:
+                continue
