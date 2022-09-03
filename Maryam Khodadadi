@@ -21,3 +21,7 @@ class Solution(object):
                 return[i,l]
             else:
                 continue
+#to check if an integer is positive and even
+def isEvenPositiveInt(n):
+    return (n>0 and (n % 2 == 0))
+ 
